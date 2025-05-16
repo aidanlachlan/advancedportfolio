@@ -11,21 +11,21 @@
     </script>
     <script src="index.js"></script>
     <script type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
-        (function(){
-            emailjs.init({
-                publicKey: "qaN8q6pBP8JR-_MyV",
-            });
-        })();
-    </script>
+      (function(){
+        emailjs.init({
+          publicKey: "qaN8q6pBP8JR-_MyV",
+        });
+      })();
+      </script>
   </head>
   <body>
-    <section id="landing">
+    <section id="landing" onmousemove="moveBackground(event)">
       <nav>
         <figure>
-          <img id="personal-logo" src="./assets/logo.svg" alt=""/>
+          <img id="personal-logo" src="./assets/AMlogo1.png" alt=""/>
         </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
@@ -43,10 +43,10 @@
             >
           </li>
           <li class="nav__link" onclick="toggleModal()">
-            <a href="" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+            <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
           </li>
           <li class="nav__link click" onclick="toggleContrast()">
-            <a href="" class="nav__link--anchor link__hover-effect link__hover-effect--black">
+            <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">
                 <i class="fa-solid fa-adjust"></i>
             </a>
           </li>
@@ -70,7 +70,7 @@
             >
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href="#" class="social__link click">
+            <a href="https://github.com/aidanlachlan" class="social__link click">
               <i class="fab fa-github"></i>
             </a>
             <a
@@ -82,19 +82,21 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fas fa-envelope"></i>
-      </button>
+      <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+          <i class="fas fa-envelope"></i>
+        </button>
+      </a>
       <a href="#projects" class="scroll">
         <div class="scroll__icon click"></div>
       </a>
       <div class="modal">
         <div class="modal__half modal__about">
-            <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
-            <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
-            <p class="modal__para">
-                I'm a 27 year-old, Seattle-born, <b class="secondary">frontend software engineer</b> with a strong passion for developing websites with <b class="secondary"> great user experiences.</b> 
-                <br> 
+        <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+        <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+        <p class="modal__para">
+            I'm a 28 year-old, Seattle-born, <b class="secondary">frontend software engineer</b> with a strong passion for developing websites with <b class="secondary"> great user experiences.</b> 
+            <br> 
                 I currently work on difficult engineering problems every day and learn from a team consisting of some of the most <b class="secondary">talented</b> and <b class="secondary">experienced</b> software engineers in the industry. 
             </p>
             <div class="modal__languages">
@@ -127,15 +129,15 @@
             <form id="contact__form" onsubmit="contact(event)">
                 <div class="form__item">
                     <label class="form__item--label">Name</label>
-                    <input class="input" name="user_name" type="text"></input>
+                    <input class="input" name="user_name" type="text" required></input>
                 </div>
                 <div class="form__item">
                     <label class="form__item--label">Email</label>
-                    <input class="input" name="user_email" type="email"></input>
+                    <input class="input" name="user_email" type="email" required></input>
                 </div>
                 <div class="form__item">
                     <label class="form__item--label">Message</label>
-                    <textarea class="input" name="message" type="text"></textarea>
+                    <textarea class="input" name="message" type="text" required></textarea>
                 </div>
                 <button id="contact__submit" class="form__submit">
                     Send it my way
@@ -149,6 +151,15 @@
             </div>
         </div>
       </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0">
+      <img src="./assets/circle.svg" class="shape shape--1">
+      <img src="./assets/squiggly.svg" class="shape shape--2">
+      <img src="./assets/circle.svg" class="shape shape--3">
+      <img src="./assets/triangle.svg" class="shape shape--4">
+      <img src="./assets/circle.svg" class="shape shape--5">
+      <img src="./assets/squiggly.svg" class="shape shape--6">
+      <img src="./assets/circle.svg" class="shape shape--7">
+      <img src="./assets/semi circle.svg" class="shape shape--8">
     </section>
     <section id="projects">
       <div class="container">
@@ -160,28 +171,24 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/blinker mockup.png"
+                  src="./assets/nft-background.png"
                   class="project__img"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">Car Sales Project</h3>
+                  <h3 class="project__description--title">NFT Internship</h3>
                   <h4 class="project__description--sub-title">
-                    Html, CSS, Javascript, Vue, Vuex
+                    Html, CSS, Javascript, React, Vite
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti eligendi aperiam illo accusantium, molestias dolore
-                    repellendus possimus, a ipsam non necessitatibus illum
-                    facilis! Suscipit eveniet dolores tenetur consectetur libero
-                    fugiat?
+                    This project involved dynamically rendering data from an API and creating animations to improve the user experience.
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/aidanlachlan/nft-internship" class="project__description--link">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="https://nft-internship.vercel.app/" class="project__description--link">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -191,28 +198,24 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/blinker mockup.png"
+                  src="./assets/skinstric-background.png"
                   class="project__img"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">Car Sales Project</h3>
+                  <h3 class="project__description--title">Skinstric Internship</h3>
                   <h4 class="project__description--sub-title">
-                    Html, CSS, Javascript, Vue, Vuex
+                    Html, Tailwind CSS, Javascript, React, Vite
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti eligendi aperiam illo accusantium, molestias dolore
-                    repellendus possimus, a ipsam non necessitatibus illum
-                    facilis! Suscipit eveniet dolores tenetur consectetur libero
-                    fugiat?
+                    In this project, I brought to life a figma design mockup using Tailwind CSS and React.
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/aidanlachlan/Skinstric-internship" class="project__description--link">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="https://skinstric-internship-psi.vercel.app/" class="project__description--link">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -222,28 +225,24 @@
             <li class="project">
               <div class="project__wrapper">
                 <img
-                  src="./assets/blinker mockup.png"
+                  src="./assets/moviez-background.png"
                   class="project__img"
                   alt=""
                 />
                 <div class="project__wrapper--bg"></div>
                 <div class="project__description">
-                  <h3 class="project__description--title">Car Sales Project</h3>
+                  <h3 class="project__description--title">Movie Database Project</h3>
                   <h4 class="project__description--sub-title">
-                    Html, CSS, Javascript, Vue, Vuex
+                    Html, CSS, Javascript, React, Vite
                   </h4>
                   <p class="project__description--para">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Deleniti eligendi aperiam illo accusantium, molestias dolore
-                    repellendus possimus, a ipsam non necessitatibus illum
-                    facilis! Suscipit eveniet dolores tenetur consectetur libero
-                    fugiat?
+                    This project involved dynamically rendering data from an API with custom design. 
                   </p>
                   <div class="project__description--links">
-                    <a href="#" class="project__description--link">
+                    <a href="https://github.com/aidanlachlan/MoviezReact" class="project__description--link">
                       <i class="fab fa-github"></i>
                     </a>
-                    <a href="#" class="project__description--link">
+                    <a href="https://moviez-react-2uqwyfhzj-aidanlachlans-projects.vercel.app/" class="project__description--link">
                       <i class="fas fa-link"></i>
                     </a>
                   </div>
@@ -258,7 +257,7 @@
       <div class="container">
         <div class="row footer__row">
             <figure>
-              <img class="footer__logo--img" src="./assets/logo.svg" alt="" />
+              <img class="footer__logo--img" src="./assets/AMlogo1.png" alt="" />
             </figure>
             <div class="footer__social--list">
               <a href="#"
@@ -268,21 +267,21 @@
                 link__hover-effect--white">
                 GitHub
               </a>
-              <a href="#"
+              <a href="#" target="_blank"
                 class="
                 footer__social--link 
                 link__hover-effect 
                 link__hover-effect--white">
                 LinkedIn
               </a>
-              <a href="#"
+              <a href="#" onclick="toggleModal()"
                 class="
                 footer__social--link 
                 link__hover-effect 
                 link__hover-effect--white">
-                Email
+                Contact
               </a>
-              <a href="#"
+              <a href="./assets/David Bragg Resume.pdf" target="_blank"
                 class="
                 footer__social--link 
                 link__hover-effect 
