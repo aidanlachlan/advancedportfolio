@@ -158,7 +158,7 @@ nav,
   background-color: #242424;
 }
 .dark-theme #personal-logo {
-  filter: none;
+  filter: invert(1);
 }
 .dark-theme .scroll__icon {
   border-color: white;
@@ -192,7 +192,6 @@ LANDING PAGE
     padding: 0 30px;
 }
 
-.header__content {}
 
 .header__para {
     font-size: 24px;
